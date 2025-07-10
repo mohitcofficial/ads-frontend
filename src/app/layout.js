@@ -1,0 +1,123 @@
+import { Inter, Poppins } from "next/font/google";
+import "./globals.css";
+import NextTopLoader from "nextjs-toploader";
+import Script from "next/script";
+import TawkToChat from "@/components/TalkToChat";
+import GTMPageView from "@/components/GTMPageView";
+
+const inter = Inter({ subsets: ["latin"] });
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+export const metadata = {
+  metadataBase: new URL("https://virtualxcel.co.in"),
+  title: {
+    default: "Virtualxcel",
+    template: "%s | Virtualxcel",
+  },
+  description: "Discover the ultimate coworking experience at Virtualxcel.",
+  twitter: {
+    card: "summary_large_image",
+  },
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="4QP5sU8e94-iZECe8pfBrj__ums-nt3y-9LELy8GVOA"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"
+        />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16609409855"
+          strategy="afterInteractive"
+        />
+        <Script src="https://checkout.razorpay.com/v1/checkout.js" />
+        <Script id="google-conversion-gtag" strategy="lazyOnLoad">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-16609409855');
+          `}
+        </Script>
+        <Script id="google-phone-call-conversion" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-16843201794/uWxgCOT7vqEaEIK6u98-', {
+              'phone_conversion_number': '+91 9871001079'
+            });
+          `}
+        </Script>
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-KQWV7CENMY"
+          strategy="lazyOnLoad"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KQWV7CENMY');
+          `}
+        </Script>
+
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K47X5MZ2');
+          <!-- End Google Tag Manager -->
+          `}
+        </Script>
+        {/* clarity script*/}
+        <Script
+          id="text-script"
+          type="text/javascript"
+          strategy="afterInteractive"
+        >
+          {`
+            (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "ngvpjxtrl3");  
+        `}
+        </Script>
+      </head>
+      <body className={poppins.className}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K47X5MZ2"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        <NextTopLoader showSpinner={false} />
+        <GTMPageView />
+        {children}
+        <TawkToChat />
+      </body>
+    </html>
+  );
+}
