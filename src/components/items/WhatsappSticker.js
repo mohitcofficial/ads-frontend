@@ -5,7 +5,7 @@ function WhatsappSticker() {
   const fontSize = { xs: 34, sm: 36, md: 38, lg: 40 };
   return (
     <a
-      href="https://wa.me/919871001079"
+      href="https://wa.me/919871018005"
       target="_blank"
       rel="noopener noreferrer"
       className={classes.whatsapp}

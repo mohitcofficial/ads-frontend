@@ -252,13 +252,13 @@
 
 @media (max-width: 601px) {
   .container {
-    height: 1000px;
+    height: 1050px;
   }
   .backgroundImage {
-    height: 1000px;
+    height: 1050px;
   }
   .image {
-    height: 1000px;
+    height: 1050px;
   }
   .container2 {
     width: 90%;
@@ -295,14 +295,14 @@
 
 @media (max-width: 400px) {
   .container {
-    height: 915px;
+    height: 1050px;
     padding-top: 30px;
   }
   .backgroundImage {
-    height: 915px;
+    height: 1050px;
   }
   .image {
-    height: 915px;
+    height: 1050px;
   }
   .container2 {
     width: 90%;

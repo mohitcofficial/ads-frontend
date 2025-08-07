@@ -42,7 +42,6 @@ export default function RootLayout({ children }) {
           src="https://www.googletagmanager.com/gtag/js?id=AW-16609409855"
           strategy="afterInteractive"
         />
-        <Script src="https://checkout.razorpay.com/v1/checkout.js" />
         <Script id="google-conversion-gtag" strategy="lazyOnLoad">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -52,7 +51,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-16609409855');
           `}
         </Script>
-        <Script id="google-phone-call-conversion" strategy="afterInteractive">
+        {/* <Script id="google-phone-call-conversion" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -62,9 +61,9 @@ export default function RootLayout({ children }) {
               'phone_conversion_number': '+91 9871001079'
             });
           `}
-        </Script>
+        </Script> */}
         {/* Google Analytics */}
-        <Script
+        {/* <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-KQWV7CENMY"
           strategy="lazyOnLoad"
@@ -76,7 +75,7 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'G-KQWV7CENMY');
           `}
-        </Script>
+        </Script> */}
 
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
@@ -114,7 +113,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         <NextTopLoader showSpinner={false} />
-        <GTMPageView />
+        {/* <GTMPageView /> */}
         {children}
         <TawkToChat />
       </body>
