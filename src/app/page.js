@@ -15,6 +15,7 @@ import Disclaimer from "@/components/lpItems/Disclaimer";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
 import OnDemandServices from "@/components/items/OnDemandServices";
 import WhatsappSticker from "@/components/items/WhatsappSticker";
+import IndependenceDayOffer from "@/components/discount/IndependenceDayOffer";
 const LPCitiesSlider = dynamic(
   () => import("../components/lpItems/LPCitiesSlider"),
   {
@@ -62,6 +63,7 @@ function page() {
       <LPHeader />
       <div className={classes.container}>
         <LPBanner />
+        <IndependenceDayOffer />
         <LPCitiesSlider />
         <LPPriceItem />
         <ProcessFlowBar />
