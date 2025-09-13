@@ -63,7 +63,7 @@ function page() {
       <LPHeader />
       <div className={classes.container}>
         <LPBanner />
-        <IndependenceDayOffer />
+        {/* <IndependenceDayOffer /> */}
         <LPCitiesSlider />
         <LPPriceItem />
         <ProcessFlowBar />
