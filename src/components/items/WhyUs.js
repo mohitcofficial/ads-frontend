@@ -11,13 +11,13 @@ function WhyUs() {
   return (
     <div className={classes.container}>
       <div className={classes.container2}>
-        <p className={classes.heading}>
-          Why Virtualxcel is Your Trusted Virtual Office Provider?
-        </p>
+        <div className={classes.headingContainer}>
+          <div className={classes.line}></div>
+          <p className={classes.heading}>Why Virtualxcel?</p>
+          <div className={classes.line}></div>
+        </div>
         <p className={classes.subHeading}>
-          Let our workspace solution experts simplify your office search. With
-          deep expertise, we ensure a hassle-free experience, finding exactly
-          what you need for your ideal workspace solution.
+          is Your Trusted Virtual Office Provider
         </p>
         <div className={classes.container3}>
           <div className={classes.box}>
@@ -25,7 +25,7 @@ function WhyUs() {
               <PaidIcon
                 className={classes.icon}
                 sx={{
-                  fontSize: { xs: 24, sm: 28, md: 34, lg: 38 },
+                  fontSize: { xs: 28, sm: 30, md: 36, lg: 44 },
                 }}
               />
               <div className={classes.content}>
@@ -40,7 +40,7 @@ function WhyUs() {
               <MoreTimeIcon
                 className={classes.icon}
                 sx={{
-                  fontSize: { xs: 24, sm: 28, md: 34, lg: 40 },
+                  fontSize: { xs: 28, sm: 30, md: 36, lg: 44 },
                 }}
               />
               <div className={classes.content}>
@@ -56,7 +56,7 @@ function WhyUs() {
               <PostAddIcon
                 className={classes.icon}
                 sx={{
-                  fontSize: { xs: 24, sm: 28, md: 34, lg: 40 },
+                  fontSize: { xs: 28, sm: 30, md: 36, lg: 44 },
                 }}
               />
               <div className={classes.content}>
@@ -72,14 +72,14 @@ function WhyUs() {
               <CurrencyExchangeIcon
                 className={classes.icon}
                 sx={{
-                  fontSize: { xs: 24, sm: 28, md: 34, lg: 40 },
+                  fontSize: { xs: 28, sm: 30, md: 36, lg: 44 },
                 }}
               />
               <div className={classes.content}>
                 <p className={classes.heading2}>Guaranteed Refund</p>
                 <p className={classes.text}>
                   Receive a full refund if your GST or company certification is
-                  declined.
+                  declined twice.
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ function WhyUs() {
               <PsychologyIcon
                 className={classes.icon}
                 sx={{
-                  fontSize: { xs: 24, sm: 28, md: 34, lg: 40 },
+                  fontSize: { xs: 28, sm: 30, md: 36, lg: 44 },
                 }}
               />
               <div className={classes.content}>
@@ -104,7 +104,7 @@ function WhyUs() {
               <SecurityIcon
                 className={classes.icon}
                 sx={{
-                  fontSize: { xs: 24, sm: 28, md: 34, lg: 40 },
+                  fontSize: { xs: 28, sm: 30, md: 36, lg: 44 },
                 }}
               />
               <div className={classes.content}>

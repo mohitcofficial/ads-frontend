@@ -2,32 +2,53 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #ee8751;
-  margin: 44px 0;
-  padding: 44px 0;
+  background-color: #c56734;
   color: var(--white-color);
+  background-color: #f1f6f8;
+  color: #34455c;
+  margin: 56px 0;
+  padding: 56px 0;
   align-items: center;
 }
 
 .container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1280px;
   width: 70%;
 }
 
-.heading {
-  font-size: 28px;
-  margin: 4px 0;
+.headingContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.line {
+  height: 3px;
+  background-color: white;
+  background-color: #34455c;
+  flex: 1;
+}
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 8px;
+  color: black;
+  flex-wrap: wrap;
+}
+
 .subHeading {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
-  margin: 24px 0;
+  row-gap: 48px;
+  margin: 44px 0;
 }
 
 .box {
@@ -44,17 +65,17 @@
   min-width: 450px;
 }
 
+.icon {
+  color: #000;
+}
+
 .heading2 {
-  font-size: 14px;
-  margin: 6px 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .text {
   font-size: 13px;
-}
-
-.icon {
-  margin-top: 8px;
 }
 
 @media (max-width: 1275px) and (min-width: 1000px) {
@@ -63,19 +84,16 @@
   }
 }
 @media (max-width: 1000px) {
-  .icon {
-    margin-top: 10px;
-  }
   .heading {
     font-size: 26px;
   }
 }
 @media (max-width: 600px) {
-  .icon {
-    margin-top: 8px;
-  }
   .container2 {
     width: 85%;
+  }
+  .heading2 {
+    font-size: 16px;
   }
   .card {
     min-width: 300px;
@@ -84,6 +102,6 @@
     font-size: 12px;
   }
   .heading {
-    font-size: 24px;
+    font-size: 22px;
   }
 }

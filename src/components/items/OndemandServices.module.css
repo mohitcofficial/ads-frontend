@@ -5,6 +5,8 @@
   margin: 80px 0 48px 0;
   padding: 44px 0;
   background-color: #f1f6f8;
+  /* background-color: #03193a; */
+  /* color: white; */
 }
 
 .contentContainer {
@@ -54,7 +56,15 @@
   font-size: 15px;
   color: #fff;
   background-color: #34455c;
+  background-color: #03193a;
+  border: 1px solid white;
   cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+.callBackButton:hover {
+  background-color: white;
+  color: #03193a;
 }
 
 @media (max-width: 1000px) {

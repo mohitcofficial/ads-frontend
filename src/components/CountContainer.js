@@ -1,0 +1,59 @@
+import React from "react";
+import classes from "./CountContainer.module.css";
+import CounterCard from "./card/CounterCard";
+
+const counterData = [
+  {
+    start: 0,
+    end: 150,
+    suffix: "+",
+    text: "PAN India Locations",
+  },
+  {
+    start: 0,
+    end: 20,
+    suffix: "+",
+    text: "States",
+  },
+  {
+    start: 0,
+    end: 10000,
+    suffix: "+",
+    text: "Trusted by Clients So Far",
+  },
+  {
+    start: 0,
+    end: 95,
+    suffix: "%",
+    text: "Approval Rate",
+  },
+  {
+    start: 0,
+    end: 8,
+    prefix: "4.", 
+    suffix: "⭐",
+    text: "Rated Service",
+  },
+];
+
+function CountContainer() {
+  return (
+    <div className={classes.container}>
+      <div className={classes.contentContainer}>
+        {counterData.map((item, index) => (
+          <CounterCard
+            key={index}
+            start={item.start}
+            end={item.end}
+            suffix={item.suffix}
+            text={item.text}
+            delay={1}
+            prefix={item?.prefix}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default CountContainer;

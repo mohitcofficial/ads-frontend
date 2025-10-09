@@ -76,7 +76,7 @@ export const BoxData2 = [
     ],
   },
   {
-    price: "799",
+    price: "699",
     heading: "Get Mailing Address Plan",
     subHeading:
       "Get a professional business address for your company at prime locations.",

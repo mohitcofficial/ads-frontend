@@ -53,7 +53,6 @@
   top: 0;
   height: 100%;
   background-color: #fcab14;
-  background-color: #000dc6;
   border-radius: 9999px;
 }
 
@@ -86,7 +85,6 @@
 
 .activeStep {
   background-color: #fcab14;
-  background-color: #000dc6;
 }
 
 .inactiveStep {
