@@ -58,7 +58,7 @@ function LPBanner({ name = "lp" }) {
       </div>
       <div className={classes.container2}>
         <div className={classes.leftContainer}>
-          <div className={classes.heading}>
+          <h1 className={classes.heading}>
             <span className={classes.heading1}>
               Transform Your Business With our Premium
               <span className={`${classes.gradientText} ${classes.heading2}`}>
@@ -66,7 +66,7 @@ function LPBanner({ name = "lp" }) {
               </span>
               PAN India
             </span>
-          </div>
+          </h1>
           <div className={classes.subHeading}>
             Set up a virtual office with Virtualxcel at prime locations across
             Pan India. Enjoy premium services, including professional addresses,
