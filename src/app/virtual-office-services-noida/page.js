@@ -65,7 +65,6 @@ function page() {
         <ReviewSlider />
       </div>
       <LPFooter />
-      <Disclaimer />
       <WhatsappSticker />
     </>
   );

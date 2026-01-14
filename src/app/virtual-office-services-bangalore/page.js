@@ -27,30 +27,26 @@ const ProcessFlowBar = dynamic(
 );
 
 export const metadata = {
-  title: "Best Virtual Offices in Gurgaon",
+  title: "Best Virtual Offices in Bangalore",
   description:
-    "Discover the finest virtual office solutions in Gurgaon with Virtualxcel. Secure a prestigious business address and elevate your company's presence.",
+    "Discover the finest virtual office solutions in Bangalore with Virtualxcel. Secure a prestigious business address and elevate your company's presence.",
   keywords: [
-    "virtual office Gurgaon",
-    "virtual office Gurugram",
+    "virtual office Bangalore",
+    "virtual office in Bangalore",
+    "virtual office address Bangalore",
     "virtual office Haryana",
-    "virtual office in Gurgaon",
-    "best office in Gurgaon",
+    "virtual office in Bangalore",
+    "best office in Bangalore",
     "Virtual Office",
+    "Virtual Office Address",
     "Virtual Office Address",
     "Premium Virtual Offce",
     "Virtual Office near me",
     "Virtual Office for Startups",
-    "cheapest virtual office in gurgaon",
-    "virtual office in Gurgaon Cybercity",
-    "virtual office in Gurgaon Cyber Hub",
-    "virtual office in Sohna Road",
-    "virtual office in Golf Course Road",
-    "virtual office in Udyog Vihar",
-    "virtual office in Sushant Lok",
-    "virtual office in Gurgaon Sector 66",
-    "virtual office in Gurgaon Sector 43",
-    "virtual office solutions Gurgaon",
+    "cheapest virtual office in Bangalore",
+    "virtual office in Bangalore Cybercity",
+    "virtual office in Bangalore Sector",
+    "virtual office solutions Bangalore",
   ],
 };
 function page() {
@@ -58,8 +54,8 @@ function page() {
     <>
       <LPHeader />
       <div className={classes.container}>
-        <LPBanner name={"Gurgaon"} />
-        <LPSlider name={"Gurgaon"} />
+        <LPBanner name={"Bangalore"} />
+        <LPSlider name={"Bangalore"} />
         <LPPriceItem />
         <ProcessFlowBar />
         <OnDemandServices />

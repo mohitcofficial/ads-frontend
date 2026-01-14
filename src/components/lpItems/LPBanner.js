@@ -3,7 +3,7 @@ import LP from "../../../public/images/VirtualOfficeBanner.jpg";
 import DelhiBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
 import GurgaonBannerImage from "../../../public/images/Gurgaon/Gurgaon2.jpg";
 import NoidaBannerImage from "../../../public/images/Noida/Noida.jpg";
-import BangaloreBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
+import BangaloreBannerImage from "../../../public/images/Bangalore/Bangalore.jpeg";
 import HyderabadBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
 import ChennaiBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
 import MumbaiBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";

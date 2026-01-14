@@ -39,6 +39,13 @@ import NoidaSector63Image from "../../../public/images/services/Noida/Sector63.w
 import NoidaSector132Image from "../../../public/images/services/Noida/Sector132.webp";
 import NoidaVyaparMargImage from "../../../public/images/services/Noida/VyaparMarg.webp";
 
+import BangaloreCBIRoadImage from "../../../public/images/services/Bangalore/CBIRoad.webp";
+import BangaloreHMTLayoutImage from "../../../public/images/services/Bangalore/HMTLayout.webp";
+import BangaloreIndiranagarImage from "../../../public/images/services/Bangalore/Indiranagar.webp";
+import BangaloreKormangalaImage from "../../../public/images/services/Bangalore/Kormangala.webp";
+import BangaloreKrishnappaBlockImage from "../../../public/images/services/Bangalore/KrishnappaBlock.webp";
+import BangaloreWhiteFieldImage from "../../../public/images/services/Bangalore/WhiteField.webp";
+
 import LPModal from "../lpItems/LPModal";
 
 function LPSlider({ name = "India" }) {
@@ -230,6 +237,38 @@ function LPSlider({ name = "India" }) {
       {
         image: NoidaSector132Image,
         name: "Sector 132",
+        price: 799,
+      },
+    ],
+    Bangalore: [
+      {
+        image: BangaloreCBIRoadImage,
+        name: "CBI ROAD Bangalore",
+        price: 799,
+      },
+      {
+        image: BangaloreHMTLayoutImage,
+        name: "HMT Layout Bangalore",
+        price: 799,
+      },
+      {
+        image: BangaloreKrishnappaBlockImage,
+        name: "Krishnappa Block",
+        price: 799,
+      },
+      {
+        image: BangaloreIndiranagarImage,
+        name: "Indiranagar",
+        price: 899,
+      },
+      {
+        image: BangaloreKormangalaImage,
+        name: "Koramangala",
+        price: 699,
+      },
+      {
+        image: BangaloreWhiteFieldImage,
+        name: "Whitefield",
         price: 799,
       },
     ],
