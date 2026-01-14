@@ -6,6 +6,10 @@ export default {
     const { data } = await axios.post(USER_URLs.sendMail, body);
     return data;
   },
+  sendTestMail: async function (body) {
+    const { data } = await axios.post(USER_URLs.sendTestMail, body);
+    return data;
+  },
   sendOnboardingMail: async function (body) {
     const { data } = await axios.post(USER_URLs.sendOnboardingMail, body);
     return data;
