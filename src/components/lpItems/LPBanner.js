@@ -1,6 +1,12 @@
 import Image from "next/image";
 import LP from "../../../public/images/VirtualOfficeBanner.jpg";
-import LP1 from "../../../public/images/Delhi/DelhiHD.jpg";
+import DelhiBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
+import GurgaonBannerImage from "../../../public/images/Gurgaon/Gurgaon2.jpg";
+import NoidaBannerImage from "../../../public/images/Noida/Noida.jpg";
+import BangaloreBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
+import HyderabadBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
+import ChennaiBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
+import MumbaiBannerImage from "../../../public/images/Delhi/DelhiHD.jpg";
 import classes from "./LPBanner.module.css";
 import LPContactForm from "./LPContactForm";
 import LPModal from "./LPModal";
@@ -43,13 +49,24 @@ const locationData = [
   },
 ];
 
-function LPBanner({ name = "lp" }) {
+const bannerImages = {
+  "Pan India": LP,
+  "New Delhi": DelhiBannerImage,
+  Gurgaon: GurgaonBannerImage,
+  Noida: NoidaBannerImage,
+  Bangalore: BangaloreBannerImage,
+  Mumbai: MumbaiBannerImage,
+  Hyderabad: HyderabadBannerImage,
+  Chennai: ChennaiBannerImage,
+};
+
+function LPBanner({ name = "Pan India" }) {
   return (
     <div className={classes.container}>
       <div className={classes.backgroundImage}>
         <Image
           className={classes.image}
-          src={name === "lp" ? LP : LP1}
+          src={bannerImages[name]}
           fill={true}
           alt=""
           placeholder="blur"
@@ -64,14 +81,14 @@ function LPBanner({ name = "lp" }) {
               <span className={`${classes.gradientText} ${classes.heading2}`}>
                 Virtual Offices
               </span>
-              PAN India
+              {name}
             </span>
           </h1>
           <div className={classes.subHeading}>
             Set up a virtual office with Virtualxcel at prime locations across
-            Pan India. Enjoy premium services, including professional addresses,
-            mail handling, and meeting rooms, all without the costs of a
-            physical office.
+            {" " + name}. Enjoy premium services, including professional
+            addresses, mail handling, and meeting rooms, all without the costs
+            of a physical office.
           </div>
           <div className={classes.subHeading2}>Trending Locations</div>
           <div className={classes.locations}>

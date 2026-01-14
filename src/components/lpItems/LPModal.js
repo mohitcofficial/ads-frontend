@@ -34,7 +34,6 @@ export default function LPModal({ children }) {
   const initialInputValue = {
     user_name: "",
     user_email: "",
-    user_message: "",
     user_mobile: "",
   };
 
@@ -48,13 +47,12 @@ export default function LPModal({ children }) {
 
   const sendMail = async (mailBody) => {
     const body = {
-      to: "testing@virtualxcel.in",
+      to: "sales@virtualxcel.in",
       subject: "Enquiry-Landing Page",
       text: mailBody,
       name: formState.user_name,
       email: formState.user_email,
       phoneNumber: formState.user_mobile,
-      requirement: formState.user_message,
     };
     setLoading(true);
     try {
@@ -91,7 +89,6 @@ export default function LPModal({ children }) {
                         <h3>Name: </h3> <p>${formState.user_name}</p>
                         <h3>Email: </h3> <p>${formState.user_email}</p>
                         <h3>Phone No: </h3> <p>${formState.user_mobile}</p>
-                        <h3>Requirement: </h3>  <p>${formState.user_message}</p>
                         <br>
                         Have a good day!`;
       sendMail(mailBody);
@@ -117,9 +114,6 @@ export default function LPModal({ children }) {
     }
     if (formState.user_mobile.trim() === "") {
       errors.user_mobile = "Phone Number is Required! ";
-    }
-    if (formState.user_message.trim() === "") {
-      errors.user_message = "Message is Required! ";
     }
     return errors;
   };
@@ -185,16 +179,6 @@ export default function LPModal({ children }) {
             </div>
 
             <p className={classes.errorMessage}>{formErrors.user_mobile}</p>
-
-            <textarea
-              placeholder="Requirement"
-              className={classes.textArea}
-              name="user_message"
-              onChange={inputChangeHandler}
-              value={formState.user_message}
-            />
-
-            <p className={classes.errorMessage}>{formErrors.user_message}</p>
 
             <button
               disabled={loading}

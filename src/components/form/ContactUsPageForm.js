@@ -25,7 +25,7 @@ function ContactUsPageForm() {
   const sendMail = async (mailBody) => {
     const body = {
       to: "sales@virtualxcel.in",
-      subject: "Enquiry",
+      subject: "Enquiry-Landing Page",
       text: mailBody,
       name: formState.user_name,
       email: formState.user_email,

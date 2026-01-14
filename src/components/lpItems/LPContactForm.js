@@ -155,7 +155,7 @@ function LPContactForm() {
 
       <p className={classes.errorMessage}>{formErrors.user_location}</p>
 
-      <textarea
+      {/* <textarea
         placeholder="Requirement"
         className={classes.textArea}
         name="user_message"
@@ -163,7 +163,7 @@ function LPContactForm() {
         value={formState.user_message}
       />
 
-      <p className={classes.errorMessage}>{formErrors.user_message}</p>
+      <p className={classes.errorMessage}>{formErrors.user_message}</p> */}
 
       <button
         disabled={loading}

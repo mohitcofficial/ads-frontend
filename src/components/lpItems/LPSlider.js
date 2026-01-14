@@ -22,6 +22,23 @@ import NehruPlaceImage from "../../../public/images/services/Delhi/NehruPlace.jp
 import PitampuraImage from "../../../public/images/services/Delhi/Pitampura.jpeg";
 import RohiniImage from "../../../public/images/services/Delhi/Rohini.jpg";
 import SaketImage from "../../../public/images/services/Delhi/Saket.jpg";
+
+import SohnaRdImage from "../../../public/images/services/Gurgaon/SohnaRd.webp";
+import CyberCityImage from "../../../public/images/services/Gurgaon/CyberCity.webp";
+import Sector43Image from "../../../public/images/services/Gurgaon/Sector43.webp";
+import Sector44Image from "../../../public/images/services/Gurgaon/Sector44.webp";
+import UdhyogViharImage from "../../../public/images/services/Gurgaon/UdyogVihar.webp";
+import UdhyogViharPhase5Image from "../../../public/images/services/Gurgaon/UdyogViharPhase5.webp";
+
+import NoidaFMRoadImage from "../../../public/images/services/Noida/FMRoad.webp";
+import NoidaSector2Image from "../../../public/images/services/Noida/Sector2.webp";
+import NoidaSector2MetroImage from "../../../public/images/services/Noida/Sector2Metro.webp";
+import NoidaSector16Image from "../../../public/images/services/Noida/Sector16.webp";
+import NoidaSector62Image from "../../../public/images/services/Noida/Sector62.webp";
+import NoidaSector63Image from "../../../public/images/services/Noida/Sector63.webp";
+import NoidaSector132Image from "../../../public/images/services/Noida/Sector132.webp";
+import NoidaVyaparMargImage from "../../../public/images/services/Noida/VyaparMarg.webp";
+
 import LPModal from "../lpItems/LPModal";
 
 function LPSlider({ name = "India" }) {
@@ -134,6 +151,85 @@ function LPSlider({ name = "India" }) {
       {
         image: LajpatNagarImage,
         name: "Lajpat Nagar",
+        price: 799,
+      },
+    ],
+    Gurgaon: [
+      {
+        image: SohnaRdImage,
+        name: "Sector-48 ,Sohna Road",
+        price: 699,
+      },
+      {
+        image: UdhyogViharImage,
+        name: "Udhyog VIhar",
+        price: 799,
+      },
+      {
+        image: UdhyogViharPhase5Image,
+        name: "Udyog Vihar Phase 5",
+        price: 799,
+      },
+      {
+        image: Sector43Image,
+        name: "Sector 43",
+        price: 799,
+      },
+      {
+        image: CyberCityImage,
+        name: "Cyber City",
+        price: 999,
+      },
+      {
+        image: Sector44Image,
+        name: "Sector 44",
+        price: 799,
+      },
+      {
+        image: Sector44Image,
+        name: "Golf Course Road",
+        price: 799,
+      },
+    ],
+    Noida: [
+      {
+        image: NoidaSector2Image,
+        name: "Sector 2",
+        price: 699,
+      },
+      {
+        image: NoidaSector2MetroImage,
+        name: "Sector-02, Near 15 (Metro)",
+        price: 799,
+      },
+      {
+        image: NoidaSector63Image,
+        name: "Sector 63",
+        price: 799,
+      },
+      {
+        image: NoidaFMRoadImage,
+        name: "FM Road",
+        price: 799,
+      },
+      {
+        image: NoidaVyaparMargImage,
+        name: "Vyapar Marg, Sector 3",
+        price: 999,
+      },
+      {
+        image: NoidaSector62Image,
+        name: "Sector 62",
+        price: 799,
+      },
+      {
+        image: NoidaSector16Image,
+        name: "Sector 16",
+        price: 799,
+      },
+      {
+        image: NoidaSector132Image,
+        name: "Sector 132",
         price: 799,
       },
     ],
