@@ -15,23 +15,24 @@ import IndependenceDayOffer from "@/components/discount/IndependenceDayOffer";
 import CountContainer from "@/components/CountContainer";
 import InformationContainer from "@/components/lpItems/InformationContainer";
 import ECommercePlatforms from "@/components/lpItems/ECommercePlatforms";
+import CallSticker from "@/components/items/CallSticker";
 const LPCitiesSlider = dynamic(
   () => import("../components/lpItems/LPCitiesSlider"),
   {
     ssr: false,
-  }
+  },
 );
 const ReviewSlider = dynamic(
   () => import("../components/slider/ReviewSlider"),
   {
     ssr: false,
-  }
+  },
 );
 const ProcessFlowBar = dynamic(
   () => import("../components/items/ProcessFlowBar"),
   {
     ssr: false,
-  }
+  },
 );
 
 export const metadata = {
@@ -76,6 +77,7 @@ function page() {
       </div>
       <LPFooter />
       <Disclaimer />
+      <CallSticker />
       <WhatsappSticker />
     </>
   );

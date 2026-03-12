@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
         <NextTopLoader showSpinner={false} />
         {/* <GTMPageView /> */}
         {children}
-        <TawkToChat />
+        {/* <TawkToChat /> */}
       </body>
     </html>
   );

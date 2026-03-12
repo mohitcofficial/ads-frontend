@@ -11,19 +11,20 @@ import OnDemandServices from "@/components/items/OnDemandServices";
 import Disclaimer from "@/components/lpItems/Disclaimer";
 import WhatsappSticker from "@/components/items/WhatsappSticker";
 import ECommercePlatforms from "@/components/lpItems/ECommercePlatforms";
+import CallSticker from "@/components/items/CallSticker";
 
 const ReviewSlider = dynamic(
   () => import("../../components/slider/ReviewSlider"),
   {
     ssr: false,
-  }
+  },
 );
 
 const ProcessFlowBar = dynamic(
   () => import("../../components/items/ProcessFlowBar"),
   {
     ssr: false,
-  }
+  },
 );
 
 export const metadata = {
@@ -69,6 +70,7 @@ function page() {
         <ReviewSlider />
       </div>
       <LPFooter />
+      <CallSticker />
       <WhatsappSticker />
     </>
   );

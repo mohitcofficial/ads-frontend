@@ -97,7 +97,7 @@ function LPHeader({ transparent = true }) {
           </li>
           <p style={{ color: "white", fontSize: "28px" }}>|</p>
           <li className={`${classes.listItem}`}>
-            <a className={classes.aTag} href="Tel:09871018005">
+            <a className={classes.aTag} href="tel:09871001079">
               <CallIcon
                 sx={{
                   color: "#FCAB14",

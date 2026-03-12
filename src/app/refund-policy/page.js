@@ -5,6 +5,7 @@ import LPHeader from "@/components/lpItems/LPHeader";
 import LPFooter from "@/components/lpItems/LPFooter";
 import WhatsappSticker from "@/components/items/WhatsappSticker";
 import Disclaimer from "@/components/lpItems/Disclaimer";
+import CallSticker from "@/components/items/CallSticker";
 
 export const metadata = {
   title: "Refund Policy",
@@ -150,6 +151,7 @@ function page() {
       </div>
       <LPFooter />
       <Disclaimer />
+      <CallSticker />
       <WhatsappSticker />
     </>
   );

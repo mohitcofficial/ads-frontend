@@ -10,6 +10,7 @@ import LPHeader from "@/components/lpItems/LPHeader";
 import LPFooter from "@/components/lpItems/LPFooter";
 import Disclaimer from "@/components/lpItems/Disclaimer";
 import WhatsappSticker from "@/components/items/WhatsappSticker";
+import CallSticker from "@/components/items/CallSticker";
 
 export const metadata = {
   title: "Connect With Us",
@@ -79,6 +80,7 @@ function page() {
       </div>
       <LPFooter />
       <Disclaimer />
+      <CallSticker />
       <WhatsappSticker />
     </>
   );
