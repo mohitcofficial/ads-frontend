@@ -8,7 +8,7 @@ import Image from "next/image";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 import TransparentLogo from "../../../public/images/LPTransparentLogo.png";
-import { phoneNumber2 } from "@/app/data/ContactInformation";
+import { phoneNumber1 } from "@/app/data/ContactInformation";
 
 function LPHeader({ transparent = true }) {
   const router = useRouter();
@@ -105,7 +105,7 @@ function LPHeader({ transparent = true }) {
                 }}
               />
               {/* +91 {phoneNumber1} */}
-              <span id="call-tracking-number">+91 {phoneNumber2}</span>
+              <span id="call-tracking-number">+91 {phoneNumber1}</span>
             </a>
           </li>
         </ul>
